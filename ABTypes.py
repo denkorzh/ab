@@ -120,6 +120,24 @@ class VariationsCollection:
                     raise TypeError('Objects of Variation type only suit.')
             self.treatments += list(args)
 
+    def delete_control(self):
+        """
+        Delete control variation.
+        """
+        self.control = None
+
+    def delete_treatment(self, n):
+        """
+        Delete treatment with given number (counting from 1) if it exists.
+        It's an in-place method.
+        
+        :param int n: number of variation to be deleted.
+        """
+        if n > len(self.treatments):
+            warnings.warn('Number of experimental variations is less then proposed number.')
+        else:
+            del self.treatments[n-1]
+
     def describe(self):
         """
         Return summary information about collection.
