@@ -27,4 +27,4 @@ def z_binomial_superiority_test(v1, v2, delta=0.):
     var = p1_hat * (1 - p1_hat) / n1 + p2_hat * (1 - p2_hat) / n2  # variance estimation
     z = pe / sqrt(var)  # test statistic
     p_value = 1 - norm.ppf(z)  # p-value
-    return Z, p_value
+    return z, p_value
