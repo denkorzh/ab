@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b3c914f-1ec4-4c82-ab46-79ee356da58c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ABUtils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABUtils.py" afterPath="$PROJECT_DIR$/ABUtils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="ABUtils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ABUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="160">
+              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -242,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496396726002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="z_binomial_superiority_test added">
+      <created>1496417409906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496417409906</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -294,7 +301,8 @@
     <MESSAGE value="ignore PyCharm files" />
     <MESSAGE value="methods to delete variations from collection are introduced" />
     <MESSAGE value="Variation.generate_sample() method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Variation.generate_sample() method added" />
+    <MESSAGE value="z_binomial_superiority_test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="z_binomial_superiority_test added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -327,8 +335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ABUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
