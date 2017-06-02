@@ -69,6 +69,18 @@ class Variation:
         else:
             return Variation(data=self.data[:1 + min(size, self.total)])
 
+    def generate_sample(self):
+        """
+        Generate a sample based on total number and number of successes.
+        
+        :return numpy.array:
+        """
+        import numpy as np
+        mask = np.random.choice(self.total, self.success, replace=False)
+        sample = np.zeros(self.total)
+        sample[mask] = 1
+        return sample
+
 
 class VariationsCollection:
     """
