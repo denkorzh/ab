@@ -28,8 +28,8 @@
       <file leaf-file-name="ABUtils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ABUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="547">
+              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -270,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496417746143</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="bug fixed">
+      <created>1496418020612</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496418020612</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -359,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ABUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="547">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
           <folding />
         </state>
       </provider>
