@@ -23,8 +23,8 @@ def z_binomial_superiority_test(v1, v2, delta=0.):
     p2_hat = v2.estimate_conversion()
     n1 = v1.total
     n2 = v2.total
-    pe = p1_hat - p2_hat  # point estimation
+    pe = p1_hat - p2_hat - delta  # point estimation
     var = p1_hat * (1 - p1_hat) / n1 + p2_hat * (1 - p2_hat) / n2  # variance estimation
     z = pe / sqrt(var)  # test statistic
-    p_value = 1 - norm.cdf(z)  # p-value
+    p_value = norm.sf(z)  # p-value
     return z, p_value
