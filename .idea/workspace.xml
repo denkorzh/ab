@@ -28,8 +28,8 @@
       <file leaf-file-name="ABUtils.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ABUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="520">
+              <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -256,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496417429610</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="typo fixed">
+      <created>1496417563151</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496417563151</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -310,7 +317,8 @@
     <MESSAGE value="Variation.generate_sample() method added" />
     <MESSAGE value="z_binomial_superiority_test added" />
     <MESSAGE value="formatting fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting fixed" />
+    <MESSAGE value="typo fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="typo fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -343,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ABUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="520">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding />
         </state>
       </provider>
