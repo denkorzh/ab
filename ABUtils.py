@@ -89,3 +89,20 @@ def f_binomial_test(v1, v2):
                    [v1.total - v1.success, v2.total - v2.success]
                    ])  # 2x2 contingency table
     return fisher_exact(table, 'greater')
+
+
+if __name__ == '__main__':
+    import ABTypes
+
+    var1 = list(map(int, input('Введите total и success первой вариации: ').split()))
+    var1 = ABTypes.Variation(*var1)
+
+    var2 = list(map(int, input('Введите total и success второй вариации: ').split()))
+    var2 = ABTypes.Variation(*var2)
+
+    tests = [z_binomial_superiority_test, z_binomial_test, f_binomial_test]
+    for test in tests:
+        print(test)
+        print(test(var1, var2))
+        print(test(var2, var1))
+        print('-' * 80)
