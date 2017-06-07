@@ -2,8 +2,8 @@
 import warnings
 from typing import List, Optional, Sequence, TypeVar
 
-PandasDataFrame = TypeVar('pandas.core.frame.DataFrame')
-Ndarray = TypeVar('ndarray')
+PandasDataFrame = TypeVar('pandas.core.frame.DataFrame')  # type hint for pandas DataFrame
+Ndarray = TypeVar('ndarray')  # type hint for numpy ndarray
 
 
 class Variation:

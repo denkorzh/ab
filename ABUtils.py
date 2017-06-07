@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
+from ABTypes import Variation
+from typing import Tuple
+
+TestResult = Tuple[float, float]  # type hint for tests output
 
 
-def z_binomial_superiority_test(v1, v2, delta=0.):
+def z_binomial_superiority_test(v1: Variation, v2: Variation, delta: float=0.) -> TestResult:
     """
     Perform Test for Non-Inferiority/Superiority for Binomial samples.
     Returns test statistic and p-value.
@@ -13,10 +17,10 @@ def z_binomial_superiority_test(v1, v2, delta=0.):
     Null hypothesis H0: epsilon <= delta.
     Alternative hypothesis H1: epsilon > delta.
     
-    :param Variation v1: first variation
-    :param Variation v2: second variation
-    :param float delta: superiority margin
-    :return tuple: 
+    :param v1: first variation
+    :param v2: second variation
+    :param delta: superiority margin
+    :return: test statistic and p-value
     """
     from scipy.stats import norm
     from numpy import sqrt
@@ -33,7 +37,7 @@ def z_binomial_superiority_test(v1, v2, delta=0.):
     return z, p_value
 
 
-def z_binomial_test(v1, v2):
+def z_binomial_test(v1: Variation, v2: Variation) -> TestResult:
     """
     Perform Test for comparison of binomial samples' means.
     Returns test statistic and p-value.
@@ -45,9 +49,9 @@ def z_binomial_test(v1, v2):
     Null hypothesis H0: p1 = p2.
     Alternative hypothesis H1: p1 > p2.
     
-    :param Variation v1: first variation
-    :param Variation v2: second variation
-    :return tuple:
+    :param v1: first variation
+    :param v2: second variation
+    :return: test statistic and p-value
     """
     from scipy.stats import norm
     from numpy import sqrt
@@ -67,7 +71,7 @@ def z_binomial_test(v1, v2):
     return z, p_value
 
 
-def f_binomial_test(v1, v2):
+def f_binomial_test(v1: Variation, v2: Variation) -> TestResult:
     """
     Perform Fisher's Exact test of binomial samples' means.
     Returns test statistic and p-value.
@@ -78,9 +82,9 @@ def f_binomial_test(v1, v2):
     Null hypothesis H0: p1 = p2.
     Alternative hypothesis H1: p1 > p2.
     
-    :param Variation v1: first variation
-    :param Variation v2: second variation
-    :return tuple:
+    :param v1: first variation
+    :param v2: second variation
+    :return: test statistic and p-value
     """
     from numpy import array
     from scipy.stats import fisher_exact
