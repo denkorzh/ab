@@ -177,3 +177,51 @@ class VariationsCollection:
         info_df = pd.DataFrame(info_dict)
         info_df.index = ['Success', 'Total', 'Conversion_rate']
         return info_df.T
+
+    def dump_json(self) -> str:
+        """
+        Dumps collection to json
+        """
+        import json
+
+        def variation_to_dict(var: Variation) -> dict:
+            """Dumps var to dictionary"""
+            dump = dict()
+            dump['total'] = var.total if var is not None else None
+            dump['success'] = var.success if var is not None else None
+            dump['data'] = var.data if var is not None else None
+            dump['group'] = var.group if var is not None else None
+            return dump
+
+        d = dict()
+        d['0'] = variation_to_dict(self.control)
+        for i, var in enumerate(self.treatments, 1):
+            d[str(i)] = variation_to_dict(var)
+
+        return json.dumps(d)
+
+    def load_json(self, js: str) -> None:
+        """
+        Loads data from json
+        :param js: json with collection data
+        """
+        import json
+
+        d = json.loads(js)  # type: dict
+
+        def dict_to_variation(dictionary: dict) -> Variation:
+            """Loads variaton from dictionary"""
+            if dictionary['data'] is not None:
+                return Variation(data=dictionary['data'], group=dictionary['group'])
+            else:
+                return Variation(total=dictionary['total'], success=dictionary['success'], group=dictionary['group'])
+
+        try:
+            self.delete_control()
+            self.treatments = []
+            self.add_control(dict_to_variation(d['0']))
+            for i in sorted(d.keys()):
+                if i != '0':
+                    self.add_treatments(dict_to_variation(d[i]))
+        except:
+            raise Exception('Cannot parse json to VariationsCollection')
